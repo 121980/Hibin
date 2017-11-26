@@ -176,7 +176,6 @@ public class RedisService implements IRedisService {
      * @param key - идентификатор
      * @return Если объект имеет expired возвращается количество оставшихся секунд, если ключ не существует или у него не выставлено expired возвращается -1
      */
-    @Override
     public <TKey> long ttl(TKey key) {
         long result = 0;
         String msg = "get ttl for key: " + key.toString();
